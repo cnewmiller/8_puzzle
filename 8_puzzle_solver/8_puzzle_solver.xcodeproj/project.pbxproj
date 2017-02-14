@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F244B211E287D8D00CBE51F /* search_agent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F244B1F1E287D8D00CBE51F /* search_agent.cpp */; };
 		6F41D5A01E269873004BDFEB /* search_node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F41D59E1E269873004BDFEB /* search_node.cpp */; };
 		6FFF478D1E1D8B030081C6A8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6FFF478C1E1D8B030081C6A8 /* main.cpp */; };
 		6FFF47951E1D8B350081C6A8 /* puzzle_board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6FFF47931E1D8B350081C6A8 /* puzzle_board.cpp */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6F244B1F1E287D8D00CBE51F /* search_agent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = search_agent.cpp; sourceTree = "<group>"; };
+		6F244B201E287D8D00CBE51F /* search_agent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = search_agent.hpp; sourceTree = "<group>"; };
 		6F41D59E1E269873004BDFEB /* search_node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = search_node.cpp; sourceTree = "<group>"; };
 		6F41D59F1E269873004BDFEB /* search_node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = search_node.hpp; sourceTree = "<group>"; };
 		6FFF47891E1D8B030081C6A8 /* 8_puzzle_solver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 8_puzzle_solver; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				6FFF478C1E1D8B030081C6A8 /* main.cpp */,
+				6F244B1F1E287D8D00CBE51F /* search_agent.cpp */,
+				6F244B201E287D8D00CBE51F /* search_agent.hpp */,
 				6F41D59E1E269873004BDFEB /* search_node.cpp */,
 				6F41D59F1E269873004BDFEB /* search_node.hpp */,
 				6FFF47931E1D8B350081C6A8 /* puzzle_board.cpp */,
@@ -129,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FFF47951E1D8B350081C6A8 /* puzzle_board.cpp in Sources */,
+				6F244B211E287D8D00CBE51F /* search_agent.cpp in Sources */,
 				6FFF478D1E1D8B030081C6A8 /* main.cpp in Sources */,
 				6F41D5A01E269873004BDFEB /* search_node.cpp in Sources */,
 			);
