@@ -22,25 +22,34 @@ private:
     
 public:
     
-    PuzzleBoard(); //initializes default board
+    PuzzleBoard();
     ~PuzzleBoard();
-    PuzzleBoard(const PuzzleBoard &);//copies values
+    PuzzleBoard(const PuzzleBoard &);
     
-    void setBoard(int [9]); //requires properly configured set
+    void setBoard(int [9]);
     void outputBoard();
-    void getPossibleMoves(PuzzleBoard[4]); //get the next four possible states
+    void getPossibleMoves(PuzzleBoard[4]); //The successor function
     
-    //these move the EMPTY SPACE in the indicated direction
+    //these move the NUMBER TILE in the indicated direction
     PuzzleBoard moveLeft();
     PuzzleBoard moveRight();
     PuzzleBoard moveDown();
     PuzzleBoard moveUp();
     
     int findCostOfMove(PuzzleBoard* newState);
+
+    int heuristic1(PuzzleBoard*);//Tiles not in the right place
+    int heuristic2(PuzzleBoard*);//Regular manhatten distance
+    int heuristic3(PuzzleBoard*);//Modified manhatten distance
     
-    //overload == to compare puzzleboards
+    
+    
     bool operator==(const PuzzleBoard& rightSide);
     bool operator!=(const PuzzleBoard& rightSide){return !(*this==rightSide);};
+    
+    operator int();
+    
+    
     
 };
 
